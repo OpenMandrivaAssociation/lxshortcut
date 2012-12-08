@@ -38,3 +38,19 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-, root, root)
 %{_bindir}/%name
 %{_datadir}/%name
+
+
+%changelog
+* Wed Aug 03 2011 Александр Казанцев <kazancas@mandriva.org> 0.1.2-1mdv2011.0
++ Revision: 693009
+- update to 0.1.2
+
+* Mon Jul 06 2009 Funda Wang <fwang@mandriva.org> 0.1.1-1mdv2011.0
++ Revision: 392806
+- new version 0.1.1
+
+* Sat Dec 06 2008 Funda Wang <fwang@mandriva.org> 0.1-1mdv2009.1
++ Revision: 311195
+- import lxshortcut
+
+

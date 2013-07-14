@@ -1,13 +1,13 @@
 Summary:	Edit app shortcuts
-Name:     	lxshortcut
+Name:		lxshortcut
 Version:	0.1.2
 Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/Other
-Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
-URL:		http://lxde.sourceforge.net/
-BuildRequires:	pkgconfig(gtk+-x11-2.0)
+Url:		http://lxde.sourceforge.net/
+Source0:	http://dfn.dl.sourceforge.net/sourceforge/lxde/%{name}-%{version}.tar.gz
 BuildRequires:	intltool
+BuildRequires:	pkgconfig(gtk+-x11-2.0)
 
 %description
 LXShortcut is a small program used to edit application shortcuts created
@@ -23,8 +23,9 @@ with freedesktop.org Desktop Entry spec.
 %install
 %makeinstall_std
 
-%{find_lang} %{name}
+%find_lang %{name}
 
 %files -f %{name}.lang
-%{_bindir}/%name
-%{_datadir}/%name
+%{_bindir}/%{name}
+%{_datadir}/%{name}
+
